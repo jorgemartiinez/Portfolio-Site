@@ -12,7 +12,9 @@ function openMenu() {
   nav.addClass('show-flex');
   nav.animate(
     {
+      height: '100vh',
       width: '100%',
+      opacity: '1'
     },
     {
       duration: 400,
@@ -26,10 +28,12 @@ function openMenu() {
 function closeMenu() {
   nav.animate(
     {
-      width: '0%',
+      width: '0',
+      height: '0',
+      opacity: '0'
     },
     {
-      duration: 300,
+      duration: 350,
       complete: function () {
         nav.removeClass('show-flex');
         $('body').removeClass('stop-scrolling');
