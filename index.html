@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/vendor/fullpage.min.css" />
+    <title>Web Personal | Jorge Martínez</title>
+  </head>
+  <body>
+    <section class="header">
+      <video class="video-bg" id="video" poster="assets/img/bg-1.jpg" autoplay muted loop>
+        <source src="assets/video/bgvideo-1.mp4" type="video/mp4" />
+        <img src="assets/img/bg-1.jpg" alt="Your browser does not support the <video> tag" title="Your browser does not support the <video> tag" />
+      </video>
+
+      <div class="header__box">
+        <h1 class="heading-primary heading-primary--text-white">Jorge Martínez</h1>
+        <h2 class="heading-secondary">Desarrollador web</h2>
+
+        <div class="header__logos">
+          <img class="header__social-img" usemap="#image-map" src="assets/img/logos/social-links.png" />
+          <map name="image-map">
+            <area
+              target="_blank"
+              alt="Github logo, ver mi perfil"
+              title="Ver mi perfil en GitHub"
+              href="https://github.com/jorgemartiinez"
+              coords="0,1,57,58"
+              shape="rect"
+            />
+            <area
+              target="_blank"
+              alt="Email ico, ver mi email"
+              title="Contactarme por correo"
+              href="mailto:jorgemartiinez19@gmail.com"
+              coords="80,3,154,55,152,5,82,53"
+              shape="rect"
+            />
+          </map>
+        </div>
+
+        <div class="header__next-box">
+          <img class="icono-ver-mas" src="assets/img/icons/go-down.svg" alt="Icono ver más" />
+        </div>
+
+        <div class="menu-icon" id="menu-icon">
+          <img src="assets/img/icons/burger-icon.svg" alt="Icono Menú" />
+        </div>
+      </div>
+    </section>
+
+    <header>
+      <nav class="nav">
+        <h2 class="heading-secondary">Menú principal</h2>
+        <img class="nav__close" id="cross-icon" src="assets/img/icons/cross-icon.svg" alt="Icono cerrar menú" />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Sobre mi</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contrátame</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="about">
+      About
+    </section>
+
+    <section class="portfolio">
+      Portfolio
+    </section>
+
+    <section class="contact">
+      Contact
+    </section>
+
+    <noscript>Necesitas tener Javascript activado para visualizar esta web.</noscript>
+    <script src="js/vendor/fullpage.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

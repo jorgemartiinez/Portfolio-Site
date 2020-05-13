@@ -1,0 +1,100 @@
+// * VIDEO COMPONENT
+.video-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+// * ICONO VER MÁS
+.icono-ver-mas {
+  position: absolute;
+  bottom: 10%;
+  width: 3rem;
+  animation: bounce 1.5s infinite ease-in-out;
+  cursor: pointer;
+}
+
+// * MENU ICON - ALWAYS TOP RIGHT
+.menu-icon {
+  position: absolute;
+  @include menuButtonsPositions;
+}
+
+// * NAV
+.nav {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: lightskyblue;
+    display: none;
+  // display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .heading-secondary {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+  }
+
+  &__links {
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    &:hover:before {
+      height: 100%;
+    }
+  }
+
+  // * BEFORE ITEM
+  &__link::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: red;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 0.3s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.3s, background-color 0.1s;
+  }
+
+  &__link:hover:before,
+  &__link--active:before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+
+  &__link:active::before {
+    background-color: green;
+  }
+
+  // ---------------
+
+  &__link {
+    position: relative;
+    z-index: 10;
+    text-transform: capitalize;
+    font-size: 5rem;
+    text-decoration: none;
+    color: #fff;
+    z-index: 10;
+  }
+
+  &__close {
+    position: absolute;
+    width: 4rem;
+    @include menuButtonsPositions;
+  }
+}

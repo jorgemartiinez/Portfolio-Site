@@ -1,0 +1,22 @@
+/*
+
+
+MAIN FILE
+
+
+*/
+
+// abstracts - variables and mixins
+@import "abstract";
+
+// animations - reusable animations
+@import "animations";
+
+// base - reset, typography, utilities
+@import "base";
+
+// layout - overall layout of the page
+@import "layout";
+
+// components - reusable components
+@import "component";

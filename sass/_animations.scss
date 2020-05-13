@@ -1,0 +1,23 @@
+@keyframes bounce {
+    0%{
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(45%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes scaleX {
+    0%{
+        transform: scaleX(0%);
+    }
+    50% {
+        transform: scaleX(1.025);
+    }
+    to {
+        transform: scaleX(0%);
+    }
+}

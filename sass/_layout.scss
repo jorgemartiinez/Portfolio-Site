@@ -1,0 +1,38 @@
+.header {
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba($color-bg-1, 0.6), rgba($color-bg-2, 0.6));
+  // width: 98vw;
+  height: 100vh;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__logos {
+    margin-top: 5rem;
+  }
+
+  &__social-img {
+    height: 5rem;
+  }
+}
+
+
+.about, .portfolio, .contact {
+  color: black;
+  font-size: 20px;
+  height: 100vh;
+  width: 100%;
+}
+
+.flex-row {
+  max-width: 120rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

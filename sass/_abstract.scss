@@ -1,0 +1,14 @@
+/* VARIABLES */
+
+
+
+
+$color-bg-1: rgb(141, 37, 231);
+$color-bg-2: rgb(81, 6, 230);
+
+
+@mixin menuButtonsPositions {
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+}

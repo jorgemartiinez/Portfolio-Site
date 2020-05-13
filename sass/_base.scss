@@ -1,0 +1,40 @@
+// * RESET
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  outline: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  outline: none;
+}
+
+// * TYPOGRAPHY
+.heading-primary {
+  font-size: 9.5rem;
+  font-weight: 600;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--text-white {
+    color: #fff;
+  }
+}
+
+.heading-secondary {
+  font-weight: 400;
+  font-size: 4.2rem;
+  color: #fff;
+}
