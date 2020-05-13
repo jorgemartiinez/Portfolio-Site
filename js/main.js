@@ -9,11 +9,31 @@ $(document).ready(function () {
 });
 
 function openMenu() {
-    nav.css('display', 'flex');
+  nav.addClass('show-flex');
+  nav.animate(
+    {
+      width: '100%',
+    },
+    {
+      duration: 400,
+      complete: function () {
+        $('body').addClass('stop-scrolling');
+      },
+    }
+  );
 }
 
 function closeMenu() {
-  console.log('hola 2');
-  nav.css('display', 'none');
-
+  nav.animate(
+    {
+      width: '0%',
+    },
+    {
+      duration: 300,
+      complete: function () {
+        nav.removeClass('show-flex');
+        $('body').removeClass('stop-scrolling');
+      },
+    }
+  );
 }

@@ -66,7 +66,8 @@ body {
           box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
-  outline: none; }
+  outline: none;
+  position: relative; }
 
 .heading-primary {
   font-size: 9.5rem;
@@ -80,6 +81,19 @@ body {
   font-weight: 400;
   font-size: 4.2rem;
   color: #fff; }
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden; }
+
+.show-flex {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
+.hide {
+  display: none; }
 
 .header {
   position: relative;
@@ -150,14 +164,18 @@ body {
   cursor: pointer; }
 
 .menu-icon {
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   top: 2%;
   right: 2%;
   cursor: pointer; }
 
 .nav {
-  position: relative;
-  width: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
   height: 100vh;
   background-color: lightskyblue;
   display: none;

@@ -17,6 +17,7 @@ body {
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
   outline: none;
+  position: relative;
 }
 
 // * TYPOGRAPHY
@@ -37,4 +38,18 @@ body {
   font-weight: 400;
   font-size: 4.2rem;
   color: #fff;
+}
+
+// * HELPERS
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.show-flex {
+  display: flex !important;
+}
+
+.hide {
+  display: none;
 }

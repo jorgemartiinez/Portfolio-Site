@@ -19,18 +19,21 @@
 
 // * MENU ICON - ALWAYS TOP RIGHT
 .menu-icon {
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   @include menuButtonsPositions;
 }
 
 // * NAV
 .nav {
-  position: relative;
-  width: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
   height: 100vh;
   background-color: lightskyblue;
-    display: none;
-  // display: flex;
+  display: none;
   justify-content: center;
   flex-direction: column;
   align-items: center;
