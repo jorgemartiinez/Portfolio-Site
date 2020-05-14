@@ -18,6 +18,8 @@ body {
   font-weight: 300;
   outline: none;
   position: relative;
+  display: block;
+  margin: 0 auto;
 }
 
 // * TYPOGRAPHY
@@ -35,10 +37,40 @@ body {
 }
 
 .heading-secondary {
-  font-weight: 400;
+  font-weight: bold;
   font-size: 4.2rem;
   color: #fff;
+  position: relative;
+  backface-visibility: hidden;
+  transition: transform .3s ease-out;
+  // &:not(.typewriter):after{
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   top: 85%;
+  //   left: 90%;
+  //   width: 35px;
+  //   height: .5rem;
+  //   background-image: url('../assets/img/icons/underscore.svg');
+  // }
+
+  &:hover {
+    transform: rotate(2deg) scale(1.1);
+  }
 }
+
+.heading-tertiary {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+
+.paragraph {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fff;
+}
+
 
 // * HELPERS
 .stop-scrolling {
@@ -52,4 +84,41 @@ body {
 
 .hide {
   display: none;
+}
+
+.typewriter {
+  width: 8em;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  animation: typewriter 3s steps(40) 1s 1 normal both, blinkTextCursor 800ms steps(40) infinite normal;
+}
+
+/* UTILITIES */
+.u-margin-top-small{
+  margin-top: 2rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 5rem;
+}
+
+.u-padding-top-medium {
+  padding-top: 5rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 5rem;
+}
+.u-block-center {
+  display: block;
+  margin: 0 auto;
+}
+
+.u-text-center {
+  text-align: center;
 }

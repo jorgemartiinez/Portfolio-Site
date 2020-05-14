@@ -1,23 +1,75 @@
+
+// * BOUNCE
 @keyframes bounce {
-    0%{
-        transform: translateY(0%);
-    }
-    50% {
-        transform: translateY(45%);
-    }
-    to {
-        transform: translateY(0%);
-    }
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(45%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 
+// * SCALE
 @keyframes scaleX {
-    0%{
-        transform: scaleX(0%);
-    }
-    50% {
-        transform: scaleX(1.025);
-    }
-    to {
-        transform: scaleX(0%);
-    }
+  0% {
+    transform: scaleX(0%);
+  }
+  50% {
+    transform: scaleX(1.025);
+  }
+  to {
+    transform: scaleX(0%);
+  }
+}
+
+// * TYPEWRITER
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 8.3em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: #fff;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+// * MOVE IN RIGHT
+@keyframes moveInRight {
+  0% { 
+      opacity: 0;
+      transform: translateX(10rem);
+  }
+
+  80% {
+      transform: translate(-1rem);
+  }
+
+  100%{
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+// * MOVE IN BOTTOM
+@keyframes moveInBottom {
+  0% {
+      transform: translateY(3rem);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
 }

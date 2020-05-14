@@ -1,14 +1,25 @@
 /* VARIABLES */
 
+$color-primary: #8F71FF;
 
+$color-secondary:#8BFFFF;
+$color-secondary-2: rgb(132, 204, 248);
+$color-tertiary: #82ACFF;
 
 
 $color-bg-1: rgb(141, 37, 231);
 $color-bg-2: rgb(81, 6, 230);
 
+$color-bg-3: #9328F1;
+$color-bg-4: #7C21E5;
 
 @mixin menuButtonsPositions {
     top: 2%;
     right: 2%;
     cursor: pointer;
+    transition: transform ease-in-out .2s;
+    &:hover {
+        transform: scale(1.1);
+        fill: red;
+    }
 }

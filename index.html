@@ -15,7 +15,7 @@
         <img src="assets/img/icons/burger-icon.svg" alt="Icono Menú" />
       </div>
       <nav class="nav">
-        <h2 class="heading-secondary">Menú principal</h2>
+        <h2 class="heading-secondary">Menú Principal</h2>
         <img class="nav__close" id="cross-icon" src="assets/img/icons/cross-icon.svg" alt="Icono cerrar menú" />
         <ul class="nav__links">
           <li class="nav__item">
@@ -33,6 +33,7 @@
         </ul>
       </nav>
     </header>
+
     <section class="header">
       <video class="video-bg" id="video" poster="assets/img/bg-1.jpg" autoplay muted loop>
         <source src="assets/video/bgvideo-1.mp4" type="video/mp4" />
@@ -41,30 +42,12 @@
 
       <div class="header__box">
         <h1 class="heading-primary heading-primary--text-white">Jorge Martínez</h1>
-        <h2 class="heading-secondary">Desarrollador web</h2>
-
+        <h2 class="heading-secondary typewriter anim-typewriter u-margin-top-small">Desarrollador web</h2>
         <div class="header__logos">
-          <img class="header__social-img" usemap="#image-map" src="assets/img/logos/social-links.png" />
-          <map name="image-map">
-            <area
-              target="_blank"
-              alt="Github logo, ver mi perfil"
-              title="Ver mi perfil en GitHub"
-              href="https://github.com/jorgemartiinez"
-              coords="0,1,57,58"
-              shape="rect"
-            />
-            <area
-              target="_blank"
-              alt="Email ico, ver mi email"
-              title="Contactarme por correo"
-              href="mailto:jorgemartiinez19@gmail.com"
-              coords="80,3,154,55,152,5,82,53"
-              shape="rect"
-            />
-          </map>
+          <a target="_blank" href="https://github.com/jorgemartiinez"
+            ><img class="header__social-img" src="assets/img/logos/social-links.png" alt="Github logo, ver mi perfil" title="Ver mi perfil en GitHub"
+          /></a>
         </div>
-
         <div class="header__next-box">
           <img class="icono-ver-mas" src="assets/img/icons/go-down.svg" alt="Icono ver más" />
         </div>
@@ -72,24 +55,78 @@
     </section>
 
     <section class="about">
-      About
+      <div class="about-me">
+        <div class="content">
+          <h2 class="heading-secondary u-margin-bottom-small u-text-center">Sobre mi</h2>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+            ipsum dolor Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat
+          </p>
+        </div>
+      </div>
+      <div class="skills">
+        <div class="content">
+          <h2 class="skills__heading heading-secondary u-margin-bottom-small u-text-center">Habilidades</h2>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+          </p>
+        </div>
+        <div class="skills__container">
+          <article class="skills__box">
+            <img class="skills__icon" src="assets/img/icons/frontend-icon.svg" alt="Habilidades Frontend" />
+            <h3 class="heading-tertiary u-text-center u-margin-top-small skills__title">Frontend</h3>
+            <ul class="skills__list">
+              <li class="skills__item">React/Redux</li>
+              <li class="skills__item">Angular/Ionic</li>
+              <li class="skills__item">Javascript</li>
+              <li class="skills__item">HTML/CSS/SASS</li>
+            </ul>
+          </article>
+          <div class="skills__box">
+            <img class="skills__icon" src="assets/img/icons/backend-icon.svg" alt="Habilidades Backend" />
+            <h3 class="heading-tertiary u-text-center u-margin-top-small skills__title">Backend</h3>
+            <ul class="skills__list">
+              <li class="skills__item">PHP/Laravel</li>
+              <li class="skills__item">NodeJS/Express</li>
+              <li class="skills__item">MySQL/MongoDB</li>
+              <li class="skills__item">Wordpress</li>
+            </ul>
+          </div>
+          <div class="skills__box">
+            <img class="skills__icon" src="assets/img/icons/others-icon.svg" alt="Habilidades Otros" />
+            <h3 class="heading-tertiary u-text-center u-margin-top-small skills__title">Otros</h3>
+            <ul class="skills__list">
+              <li class="skills__item">Git</li>
+              <li class="skills__item">Jest</li>
+              <li class="skills__item">Adobe XD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="portfolio">
-      Portfolio
+      <div class="content">
+        <h2 class="heading-secondary u-margin-bottom-small u-text-center">Portfolio</h2>
+        <p class="paragraph u-margin-bottom-medium">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+          diam voluptua.
+        </p>
+      </div>
     </section>
 
     <section class="contact">
       Contact
     </section>
-
     <noscript>Necesitas tener Javascript activado para visualizar esta web.</noscript>
-    <script src="js/vendor/fullpage.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.0.min.js"
       integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
       crossorigin="anonymous"
     ></script>
+    <script src="js/vendor/jquery.alton.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
