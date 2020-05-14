@@ -8,14 +8,14 @@ $(document).ready(function () {
   crossIcon.click(closeMenu);
 
 });
-// $(document).alton({
-//   fullSlideContainer: 'full', // Tell Alton the full height container
-//   singleSlideClass: 'slide', // Tell Alton the full height slide class
-//   useSlideNumbers: true, // Set to false if you don't want to use pagination
-//   slideNumbersBorderColor: '#fff', // Set the outside color of the pagination items
-//   slideNumbersColor: 'transparent', // Set the inner color of the pagination items
-//   bodyContainer: 'body', // Tell Alton the body class
-// });
+$(document).alton({
+  fullSlideContainer: 'full', // Tell Alton the full height container
+  singleSlideClass: 'slide', // Tell Alton the full height slide class
+  useSlideNumbers: true, // Set to false if you don't want to use pagination
+  slideNumbersBorderColor: '#fff', // Set the outside color of the pagination items
+  slideNumbersColor: 'transparent', // Set the inner color of the pagination items
+  bodyContainer: 'body', // Tell Alton the body class
+});
 function openMenu() {
   nav.addClass('show-flex');
   nav.animate(
