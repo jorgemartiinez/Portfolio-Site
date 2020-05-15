@@ -64,6 +64,11 @@ body {
   font-weight: bold;
 }
 
+.heading-quaternary {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
 
 .paragraph {
   font-size: 2.5rem;
@@ -71,6 +76,10 @@ body {
   color: #fff;
 }
 
+.paragraph-small {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
 
 // * HELPERS
 .stop-scrolling {

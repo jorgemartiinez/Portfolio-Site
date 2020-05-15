@@ -8,6 +8,7 @@ section {
   // width: 98vw;
   height: 100vh;
   &__box {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,10 +22,15 @@ section {
 
   &__social-img {
     height: 5rem;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
     &:hover {
       transform: scale(1.1);
     }
+  }
+
+  &__next-box {
+    position: absolute;
+    bottom: 10%;
   }
 }
 
@@ -34,18 +40,14 @@ section {
   background-size: cover;
 }
 
-
 .portfolio {
   background-image: linear-gradient(to top right, $color-bg-3, $color-bg-4);
 }
 
 .about,
-.portfolio
-{
+.portfolio {
   padding-top: 5rem;
 }
-
-
 
 .content {
   max-width: 120rem;

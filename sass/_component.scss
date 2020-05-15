@@ -10,11 +10,45 @@
 
 // * ICONO VER MÁS
 .icono-ver-mas {
-  position: absolute;
-  bottom: 10%;
   width: 3rem;
   animation: bounce 1.5s infinite ease-in-out;
+}
+
+// * BUTTON
+
+.btn {
+  border-radius: 3rem;
   cursor: pointer;
+
+  &--portfolio {
+    font-size: 2.2rem;
+    padding: 1.2rem 3rem;
+    font-weight: 400;
+    border: 1px solid $color-tertiary;
+    background-color: #fff;
+    color: $color-tertiary;
+
+    transition: all 0.3s ease-in-out;
+
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: $color-tertiary;
+      transform: translateY(-1rem);
+    }
+
+    &:active {
+      transform: translateY(0rem);
+    }
+  }
+
+  &--active {
+    background-color: $color-tertiary;
+    color: #fff;
+  }
 }
 
 // * MENU ICON - ALWAYS TOP RIGHT
@@ -128,7 +162,7 @@
     }
     border: 2px solid #fff;
 
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 
     &:hover {
       transform: translateY(-3rem);
@@ -166,5 +200,81 @@
       height: 1.5rem;
       background-image: url('../assets/img/icons/tick-icon.svg');
     }
+  }
+}
+
+// * PORTFOLIO
+
+.portfolio {
+  padding: 7rem 10rem;
+
+  &__buttons {
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    width: calc(33.3333% - 2rem);
+    // width: 80%;
+    height: 45rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__text {
+    padding: 1rem 2rem;
+  }
+
+  .paragraph-small {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 25rem;
+    background-clip: content-box;
+    object-fit: cover;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+  }
+
+  &__more {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__link-img {
+    width: 3rem;
+  }
+
+  &__tags {
+    font-size: 1.5rem;
+    color: $color-grey-1;
   }
 }
