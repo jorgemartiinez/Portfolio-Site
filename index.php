@@ -1,4 +1,4 @@
-<?php include('server/portfolio.php') ?>
+<?php require('server/portfolio.php') ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -133,7 +133,7 @@
     <div class="portfolio__cards u-margin-top-medium">
       <?php foreach ($trabajos as $trabajo) { ?>
         <article class="portfolio__card">
-          <img class="portfolio__img" alt="Proyecto 1 tal" src="assets/img/bg-1.jpg" />
+          <img class="portfolio__img" alt="Proyecto 1 tal" src="assets/img/portfolio/<?= $trabajo['imagen'] ?>" />
           <div class="portfolio__text">
             <h4 class="heading-quaternary"><?= $trabajo['nombre'] ?></h4>
             <p class="paragraph-small">
@@ -162,7 +162,13 @@
   </section>
 
   <section class="contact" id="contact">
-    Contact
+    <div class="content">
+      <h2 class="heading-secondary u-margin-bottom-small u-text-center">Contacto</h2>
+      <p class="paragraph u-margin-bottom-medium">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+        diam voluptua.
+      </p>
+    </div>
   </section>
   <noscript>Necesitas tener Javascript activado para visualizar esta web.</noscript>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>

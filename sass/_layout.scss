@@ -40,12 +40,21 @@ section {
   background-size: cover;
 }
 
+.contact {
+  background-image: linear-gradient(to top right, $color-bg-3, $color-bg-4);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .portfolio {
   background-image: linear-gradient(to top right, $color-bg-3, $color-bg-4);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about,
-.portfolio {
+.portfolio,
+.contact {
   padding-top: 5rem;
 }
 

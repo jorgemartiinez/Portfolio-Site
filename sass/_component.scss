@@ -41,7 +41,7 @@
     }
 
     &:active {
-      transform: translateY(0rem);
+      transform: translateY(1rem);
     }
   }
 
@@ -226,6 +226,12 @@
     background-color: #fff;
     border-radius: 0.5rem;
     margin-bottom: 2rem;
+
+    transition: transform .2s ease;
+
+    &:hover {
+      transform: scale(1.012);
+    }
 
     &:not(:last-child) {
       margin-right: 2rem;
