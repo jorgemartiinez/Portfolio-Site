@@ -47,13 +47,13 @@
       <h1 class="heading-primary heading-primary--text-white">Jorge Martínez</h1>
       <h2 class="heading-secondary typewriter anim-typewriter u-margin-top-small">Desarrollador web</h2>
       <div class="header__logos">
-        <a target="_blank" href="https://github.com/jorgemartiinez"><img class="header__social-img" src="assets/img/logos/social-links.png" alt="Github logo, ver mi perfil" title="Ver mi perfil en GitHub" /></a>
+        <a target="_blank" class="header__social-link" href="https://github.com/jorgemartiinez"><img class="header__social-img" src="assets/img/logos/social-links.png" alt="Github logo, ver mi perfil" title="Ver mi perfil en GitHub" /></a>
+        <a target="_blank" class="header__social-link" href="https://linkedin.com/in/jorge-martínez-b8873b1a4"><img class="header__social-img" src="assets/img/logos/linkedin.svg" alt="Linkeding logo, ver mi perfil" title="Ver mi perfil en Linkedin" /></a>
       </div>
-      <a href="#about">
-        <div class="header__next-box">
-          <img class="icono-ver-mas" src="assets/img/icons/go-down.svg" alt="Icono ver más" />
-        </div>
-      </a>
+      <div class="header__next-box">
+        <a href="#about">
+          <img class="icono-ver-mas" src="assets/img/icons/go-down.svg" alt="Icono ver más" /></a>
+      </div>
     </div>
   </section>
 
@@ -81,13 +81,13 @@
           <img class="skills__icon" src="assets/img/icons/frontend-icon.svg" alt="Habilidades Frontend" />
           <h3 class="heading-tertiary u-text-center u-margin-top-small skills__title">Frontend</h3>
           <ul class="skills__list">
-            <li class="skills__item">React/Redux</li>
+            <li class="skills__item">React/Redux </li>
             <li class="skills__item">Angular/Ionic</li>
             <li class="skills__item">Javascript/JQuery</li>
             <li class="skills__item">HTML/CSS/SASS</li>
           </ul>
         </article>
-        <div class="skills__box">
+        <article class="skills__box">
           <img class="skills__icon" src="assets/img/icons/backend-icon.svg" alt="Habilidades Backend" />
           <h3 class="heading-tertiary u-text-center u-margin-top-small skills__title">Backend</h3>
           <ul class="skills__list">
@@ -96,8 +96,8 @@
             <li class="skills__item">MySQL/MongoDB</li>
             <li class="skills__item">Wordpress</li>
           </ul>
-        </div>
-        <div class="skills__box">
+        </article>
+        <article class="skills__box">
           <img class="skills__icon" src="assets/img/icons/others-icon.svg" alt="Habilidades Otros" />
           <h3 class="heading-tertiary u-text-center u-margin-top-small skills__title">Otros</h3>
           <ul class="skills__list">
@@ -105,7 +105,7 @@
             <li class="skills__item">Jest</li>
             <li class="skills__item">Adobe XD</li>
           </ul>
-        </div>
+        </article>
       </div>
     </div>
   </section>
@@ -139,22 +139,22 @@
             <p class="paragraph-small">
               <?= $trabajo['texto'] ?>
             </p>
-            <div class="portfolio__more">
-              <div class="portfolio__links">
-                <?php if ($trabajo['links'][0] !== null) { ?>
-                  <a href="<?= $trabajo['links'][0] ?>" class="portfolio__link"><img class="portfolio__link-img" src="assets/img/icons/github-alt.svg" title="Acceder a GitHub <?= $trabajo['nombre'] ?>" alt="Acceder a github <?= $trabajo['nombre'] ?>" /></a>
-                <?php } ?>
-                <?php if ($trabajo['links'][1] !== null) { ?>
-                  <a href="<?= $trabajo['links'][1] ?>" class="portfolio__link"><img class="portfolio__link-img" src="assets/img/icons/chrome.svg" alt="Acceder a <?= $trabajo['nombre'] ?>" title="Acceder a <?= $trabajo['nombre'] ?>" /></a>
-                <?php } ?>
-                <?php if ($trabajo['links'][2] !== null) { ?>
-                  <a href="<?= $trabajo['links'][2] ?>" class="portfolio__link"><img class="portfolio__link-img" src="assets/img/icons/yt-alt.svg" alt="Acceder a <?= $trabajo['nombre'] ?>" title="Acceder a <?= $trabajo['nombre'] ?>" /></a>
-                <?php } ?>
-              </div>
-              <p class="portfolio__tags"><?php foreach ($trabajo['categorias'] as $categoria) {
-                                            echo $categoria . " ";
-                                          } ?></p>
+          </div>
+          <div class="portfolio__more">
+            <div class="portfolio__links">
+              <?php if ($trabajo['links'][0] !== null) { ?>
+                <a href="<?= $trabajo['links'][0] ?>" class="portfolio__link"><img class="portfolio__link-img" src="assets/img/icons/github-alt.svg" title="Acceder a GitHub <?= $trabajo['nombre'] ?>" alt="Acceder a github <?= $trabajo['nombre'] ?>" /></a>
+              <?php } ?>
+              <?php if ($trabajo['links'][1] !== null) { ?>
+                <a href="<?= $trabajo['links'][1] ?>" class="portfolio__link"><img class="portfolio__link-img" src="assets/img/icons/chrome.svg" alt="Acceder a <?= $trabajo['nombre'] ?>" title="Acceder a <?= $trabajo['nombre'] ?>" /></a>
+              <?php } ?>
+              <?php if ($trabajo['links'][2] !== null) { ?>
+                <a href="<?= $trabajo['links'][2] ?>" class="portfolio__link"><img class="portfolio__link-img" src="assets/img/icons/yt-alt.svg" alt="Acceder a <?= $trabajo['nombre'] ?>" title="Acceder a <?= $trabajo['nombre'] ?>" /></a>
+              <?php } ?>
             </div>
+            <p class="portfolio__tags"><?php foreach ($trabajo['categorias'] as $categoria) {
+                                          echo $categoria . " ";
+                                        } ?></p>
           </div>
         </article>
       <?php } ?>
@@ -168,6 +168,19 @@
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
         diam voluptua.
       </p>
+
+
+      <article class="contact__info">
+        <div class="contact__call">
+          <a href="#"><img class="contact__icon" src="assets/img/icons/envelope-icon.svg" alt="Teléfono Contacto"></a>
+          <a class="contact__link" href="#">jorgemartiinez19[arroba]gmail[punto]com</a>
+        </div>
+        <div class="contact__email">
+          <a href="#"> <img class="contact__icon" src="assets/img/icons/phone-icon.svg" alt="Email Contacto"></a>
+          <a class="contact__link" href="#">605515467</a>
+        </div>
+      </article>
+
     </div>
   </section>
   <noscript>Necesitas tener Javascript activado para visualizar esta web.</noscript>

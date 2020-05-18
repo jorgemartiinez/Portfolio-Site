@@ -1,27 +1,61 @@
-/* VARIABLES */
+// * VARIABLES
 
-$color-primary: #8F71FF;
+$color-primary: #8f71ff;
 
-$color-secondary:#8BFFFF;
+$color-secondary: #8bffff;
 $color-secondary-2: rgb(132, 204, 248);
-$color-tertiary: #82ACFF;
-
+$color-tertiary: #82acff;
 
 $color-grey-1: rgb(114, 110, 110);
 
 $color-bg-1: rgb(141, 37, 231);
 $color-bg-2: rgb(81, 6, 230);
 
-$color-bg-3: #9328F1;
-$color-bg-4: #7C21E5;
+$color-bg-3: #9328f1;
+$color-bg-4: #7c21e5;
 
+// * MEDIA QUERIES
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+
+}
+
+// * MIXINS
 @mixin menuButtonsPositions {
-    top: 2%;
-    right: 2%;
-    cursor: pointer;
-    transition: transform ease-in-out .2s;
-    &:hover {
-        transform: scale(1.1);
-        fill: red;
-    }
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
+  transition: transform ease-in-out 0.2s;
+  &:hover {
+    transform: scale(1.1);
+    fill: red;
+  }
 }

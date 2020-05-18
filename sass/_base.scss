@@ -10,6 +10,24 @@
 
 html {
   font-size: 62.5%;
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(mobile) {
+    font-size: 40%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
 }
 
 body {
@@ -34,6 +52,10 @@ body {
   &--text-white {
     color: #fff;
   }
+
+  @include respond(phone) {
+    font-size: 8rem;
+  }
 }
 
 .heading-secondary {
@@ -42,7 +64,15 @@ body {
   color: #fff;
   position: relative;
   backface-visibility: hidden;
-  transition: transform .3s ease-out;
+  transition: transform 0.3s ease-out;
+
+  &:hover {
+    transform: rotate(2deg) scale(1.1);
+  }
+
+  @include respond(phone) {
+    font-size: 3.5rem;
+  }
   // &:not(.typewriter):after{
   //   content: "";
   //   position: absolute;
@@ -53,22 +83,21 @@ body {
   //   height: .5rem;
   //   background-image: url('../assets/img/icons/underscore.svg');
   // }
-
-  &:hover {
-    transform: rotate(2deg) scale(1.1);
-  }
 }
 
 .heading-tertiary {
   font-size: 3.2rem;
   font-weight: bold;
+
+  @include respond(phone) {
+    font-size: 2.8rem;
+  }
 }
 
 .heading-quaternary {
   font-size: 2.8rem;
   font-weight: 500;
 }
-
 
 .paragraph {
   font-size: 2.5rem;
@@ -105,7 +134,7 @@ body {
 }
 
 /* UTILITIES */
-.u-margin-top-small{
+.u-margin-top-small {
   margin-top: 2rem;
 }
 

@@ -5,8 +5,8 @@ section {
   position: relative;
   background-image: linear-gradient(to right bottom, rgba($color-bg-1, 0.6), rgba($color-bg-2, 0.6));
   background-size: auto;
-  // width: 98vw;
   height: 100vh;
+
   &__box {
     position: relative;
     display: flex;
@@ -20,6 +20,12 @@ section {
     margin-top: 5rem;
   }
 
+  &__social-link {
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
   &__social-img {
     height: 5rem;
     transition: transform 0.3s ease;
@@ -29,8 +35,8 @@ section {
   }
 
   &__next-box {
-    position: absolute;
-    bottom: 10%;
+   position: absolute;
+   bottom: 5%;
   }
 }
 
@@ -60,5 +66,6 @@ section {
 
 .content {
   max-width: 120rem;
+  padding: 2rem;
   margin: 0 auto;
 }
