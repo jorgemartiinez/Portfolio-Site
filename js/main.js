@@ -38,6 +38,22 @@ $(document).ready(function () {
 
   menuIcon.click(openMenu);
   crossIcon.click(closeMenu);
+
+  // * email para evitar bots
+  var emailSpan = $('#email-span');
+  var emailLink = $('#email-link');
+  var nombre = 'jorgemartiinez19';
+  var arroba = '@';
+  var dominio = 'gmail.com';
+  emailSpan.text(nombre + arroba + dominio);
+  emailLink.attr('href', 'mailto:' + nombre + arroba + dominio);
+  // * telefono para evitar bots
+  var telSpan = $('#tel-span');
+  var telLink = $('#tel-link');
+
+  telSpan.text('6' + '0' + '5' + '5' + '1' + '5' + '4' + '6' + '7');
+  telLink.attr('href', 'tel:'+ '6' + '0' + '5' + '5' + '1' + '5' + '4' + '6' + '7');
+
 });
 
 var tipoActivo = 'Todos';
@@ -56,7 +72,7 @@ function filtrarPortfolio(btn, tipo) {
   if (tipo == 'todos') {
     portfolios.each(function () {
       var portfolio = $(this);
-      portfolio.css('display', 'block');
+      portfolio.css('display', 'flex');
       portfolio.animate(
         {
           opacity: '1',
@@ -64,7 +80,7 @@ function filtrarPortfolio(btn, tipo) {
         {
           duration: 200,
           complete: function () {
-            portfolio.css('display', 'block');
+            portfolio.css('display', 'flex');
           },
         }
       );
@@ -74,7 +90,7 @@ function filtrarPortfolio(btn, tipo) {
       var portfolio = $(this);
       var tags = portfolio.find('.portfolio__tags').text().replace(/ /g, '').toLowerCase();
       console.log(tags);
-      if (tags.includes(tipo)) {
+      if (tags.indexOf(tipo) > -1) {
         console.log('esta es de ese tipo');
         portfolio.animate(
           {
@@ -83,7 +99,7 @@ function filtrarPortfolio(btn, tipo) {
           {
             duration: 200,
             complete: function () {
-              portfolio.css('display', 'block');
+              portfolio.css('display', 'flex');
             },
           }
         );
@@ -103,7 +119,6 @@ function filtrarPortfolio(btn, tipo) {
       }
     });
   }
-  console.log('Filtrar', tipo);
 }
 
 var menuIcon = $('#menu-icon');

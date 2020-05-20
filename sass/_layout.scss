@@ -1,6 +1,3 @@
-section {
-}
-
 .header {
   position: relative;
   background-image: linear-gradient(to right bottom, rgba($color-bg-1, 0.6), rgba($color-bg-2, 0.6));
@@ -36,7 +33,7 @@ section {
 
   &__next-box {
    position: absolute;
-   bottom: 5%;
+   bottom: 10%;
   }
 }
 
@@ -58,14 +55,22 @@ section {
   background-size: cover;
 }
 
-.about,
+.about {
+  padding-top: 5rem;
+}
+
 .portfolio,
 .contact {
   padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .content {
   max-width: 120rem;
+
+  @include respond(big-desktop){
+    max-width: 190rem;
+  }
   padding: 2rem;
   margin: 0 auto;
 }

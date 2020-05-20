@@ -1,50 +1,49 @@
 [
   {
-    "id": "nkcqjdmu",
-    "nombre": "Proyecto 1",
-    "texto": "Lorem ipsum dolor atmet makaala macikusi requesti succesfall on generar?. Lorem ahmet mafa ae asfac espiritus santus.",
-    "categorias": ["CSS", "Javascript", "Wordpress"],
-    "imagen": "trabajo1.png",
-    "links": ["adas", null, "youtube.com"]
+    "nombre": "Página Portfolio",
+    "texto": "Proyecto en el que he creado esta misma página web que me servirá de currículum y para mostrar los trabajos/proyectos que vaya realizando. ",
+    "categorias": ["CSS", "SASS", "PHP", "Javascript"],
+    "imagen": "bg-1.jpg",
+    "links": [
+      "https://github.com/jorgemartiinez/portfolio-site",
+      null,
+      null
+    ]
   },
   {
-    "id": "nkcqjdmu",
-    "nombre": "Proyecto 2",
-    "texto": "Lorem ipsum dolor atmet makaala macikusi requesti succesfall on generar?. Lorem ahmet mafa ae asfac espiritus santus.",
-    "categorias": ["Javascript", "Wordpress"],
-    "imagen": "trabajo1.png",
-    "links": [null, null, null]
+    "nombre": "Proyecto Real Estate",
+    "texto": "Proyecto que realicé para un cliente que quería una web para su empresa. Utilicé Wordpress con el plugin Elementor, y añadí mi propio CSS y JS para varias modificaciones.",
+    "categorias": ["Wordpress", "CSS", "Javascript"],
+    "imagen": "realestate.jpg",
+    "links": [
+      null,
+      "https://realestate-leader.es/",
+      null
+    ]
   },
   {
-    "id": "nkcqjdmu",
-    "nombre": "Proyecto 1",
-    "texto": "Lorem ipsum dolor atmet makaala macikusi requesti succesfall on generar?. Lorem ahmet mafa ae asfac espiritus santus.",
-    "categorias": ["CSS"],
-    "imagen": "trabajo1.png",
-    "links": ["adas", null, "youtube.com"]
+    "nombre": "Proyecto Final Grado",
+    "texto": "Durante las prácticas de DAW creé un panel de administración que sirve para realizar un control de horas de los clientes, con una nota de 9/10. Demo en Youtube.",
+    "categorias": ["PHP", "Javascript", "Bootstrap", "SQL"],
+    "imagen": "php.jpg",
+    "links": [
+      "https://github.com/jorgemartiinez/Control-Horas",
+      "https://control.pandacreatiu.com",
+      "https://www.youtube.com/watch?v=OwuN-26fTXo&feature=youtu.be"
+    ]
   },
   {
-    "id": "nkcqjdmu",
-    "nombre": "Proyecto 1",
-    "texto": "Lorem ipsum dolor atmet makaala macikusi requesti succesfall on generar?. Lorem ahmet mafa ae asfac espiritus santus.",
-    "categorias": ["Wordpress"],
-    "imagen": "trabajo1.png",
-    "links": ["adas", null, "youtube.com"]
+    "nombre": "Integrador DAW",
+    "texto": "Proyecto integrador del ciclo de DAW. Se crea un sitio web para boy scauts y panel de administración para el mismo. Obtuvimos una nota de 9/10.",
+    "categorias": ["Laravel", "Vue", "PHP", "Javascript"],
+    "imagen": "integrador.jfif",
+    "links": ["https://github.com/jorgemartiinez/Proyecto-Integrador-DAW", null, null]
   },
   {
-    "id": "nkcqjdmu",
-    "nombre": "Proyecto 1",
-    "texto": "Lorem ipsum dolor atmet makaala macikusi requesti succesfall on generar?. Lorem ahmet mafa ae asfac espiritus santus.",
-    "categorias": ["Javascript", "PHP"],
-    "imagen": "trabajo1.png",
-    "links": ["adas", null, "youtube.com"]
-  },
-  {
-    "id": "nkcqjdmu",
-    "nombre": "Proyecto 1",
-    "texto": "Lorem ipsum dolor atmet makaala macikusi requesti succesfall on generar?. Lorem ahmet mafa ae asfac espiritus santus.",
-    "categorias": ["CSS"],
-    "imagen": "trabajo1.png",
-    "links": ["adas", null, "youtube.com"]
+    "nombre": "ProjectsApp",
+    "texto": "Proyecto en el que intenté crear una app con dos secciones; una para gestionar tareas de mis proyectos (tipo todo-list) divididos en categorías, y otra para crear y editar notas.",
+    "categorias": ["Angular", "Ionic"],
+    "imagen": "ionic.png",
+    "links": ["https://github.com/jorgemartiinez/ProjectsApp-ionic", null, null]
   }
 ]

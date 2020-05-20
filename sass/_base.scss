@@ -40,6 +40,17 @@ body {
   margin: 0 auto;
 }
 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+p::selection,
+a::selection,
+span::selection {
+  background-color: $color-secondary;
+  color: #fff;
+}
+
 // * TYPOGRAPHY
 .heading-primary {
   font-size: 9.5rem;
@@ -159,4 +170,15 @@ body {
 
 .u-text-center {
   text-align: center;
+}
+#not-supported {
+  display: none;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body {
+    display: none;
+  }
+  #not-supported {
+    display: block;
+  }
 }

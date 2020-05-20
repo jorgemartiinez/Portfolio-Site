@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="css/vendor/fullpage.min.css" />
   <title>Web Personal | Jorge Martínez</title>
 </head>
-<!-- <body id="fullpage"> -->
 
 <body>
   <header>
@@ -38,7 +37,7 @@
   </header>
 
   <section class="header" id="header">
-    <video class="video-bg" id="video" poster="assets/img/bg-1.jpg" autoplay muted loop>
+    <video class="video-bg" id="video" poster="assets/img/portfolio/bg-1.jpg" autoplay muted loop>
       <source src="assets/video/bgvideo-1.mp4" type="video/mp4" />
       <img src="assets/img/bg-1.jpg" alt="Your browser does not support the <video> tag" title="Your browser does not support the <video> tag" />
     </video>
@@ -83,7 +82,7 @@
           <ul class="skills__list">
             <li class="skills__item">React/Redux </li>
             <li class="skills__item">Angular/Ionic</li>
-            <li class="skills__item">Javascript/JQuery</li>
+            <li class="skills__item">Javascript/Typescript/JQuery</li>
             <li class="skills__item">HTML/CSS/SASS</li>
           </ul>
         </article>
@@ -122,18 +121,21 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem quia pariatur vitae tenetur fugiat perspiciatis!
       </p>
 
-      <div class="u-text-center">
-        <button class="btn btn--portfolio btn--active" data-button="Todos">Todos</button>
-        <button class="btn btn--portfolio" data-button="Javascript">Javascript</button>
-        <button class="btn btn--portfolio" data-button="PHP">PHP</button>
-        <button class="btn btn--portfolio" data-button="CSS">CSS/SASS</button>
-        <button class="btn btn--portfolio" data-button="Wordpress">Wordpress</button>
+      <div class="u-text-center u-margin-top-medium">
+        <button class="btn btn--portfolio btn--active u-margin-bottom-small" data-button="Todos">Todos</button>
+        <button class="btn btn--portfolio u-margin-bottom-small" data-button="Javascript">Javascript</button>
+        <button class="btn btn--portfolio u-margin-bottom-small" data-button="PHP">PHP</button>
+        <button class="btn btn--portfolio u-margin-bottom-small" data-button="Laravel">Laravel</button>
+        <button class="btn btn--portfolio u-margin-bottom-small" data-button="CSS">CSS/SASS</button>
+        <button class="btn btn--portfolio u-margin-bottom-small" data-button="Wordpress">Wordpress</button>
+        <button class="btn btn--portfolio u-margin-bottom-small" data-button="React">React</button>
+        <button class="btn btn--portfolio u-margin-bottom-small" data-button="Angular">Angular</button>
       </div>
     </div>
-    <div class="portfolio__cards u-margin-top-medium">
+    <div class="portfolio__cards u-margin-top-small">
       <?php foreach ($trabajos as $trabajo) { ?>
         <article class="portfolio__card">
-          <img class="portfolio__img" alt="Proyecto 1 tal" src="assets/img/portfolio/<?= $trabajo['imagen'] ?>" />
+          <img class="portfolio__img" alt="<?= $trabajo['nombre'] ?> imagen" src="assets/img/portfolio/<?= $trabajo['imagen'] ?>" />
           <div class="portfolio__text">
             <h4 class="heading-quaternary"><?= $trabajo['nombre'] ?></h4>
             <p class="paragraph-small">
@@ -143,13 +145,13 @@
           <div class="portfolio__more">
             <div class="portfolio__links">
               <?php if ($trabajo['links'][0] !== null) { ?>
-                <a href="<?= $trabajo['links'][0] ?>" class="portfolio__link"><img class="portfolio__link-img" src="assets/img/icons/github-alt.svg" title="Acceder a GitHub <?= $trabajo['nombre'] ?>" alt="Acceder a github <?= $trabajo['nombre'] ?>" /></a>
+                <a target="_blank" href="<?= $trabajo['links'][0] ?>" class="portfolio__link"><img class="portfolio__link-img" src="assets/img/icons/github-alt.svg" title="Acceder a GitHub <?= $trabajo['nombre'] ?>" alt="Acceder a github <?= $trabajo['nombre'] ?>" /></a>
               <?php } ?>
               <?php if ($trabajo['links'][1] !== null) { ?>
-                <a href="<?= $trabajo['links'][1] ?>" class="portfolio__link"><img class="portfolio__link-img" src="assets/img/icons/chrome.svg" alt="Acceder a <?= $trabajo['nombre'] ?>" title="Acceder a <?= $trabajo['nombre'] ?>" /></a>
+                <a target="_blank" href="<?= $trabajo['links'][1] ?>" class="portfolio__link"><img class="portfolio__link-img" src="assets/img/icons/chrome.svg" alt="Acceder a <?= $trabajo['nombre'] ?>" title="Acceder a <?= $trabajo['nombre'] ?>" /></a>
               <?php } ?>
               <?php if ($trabajo['links'][2] !== null) { ?>
-                <a href="<?= $trabajo['links'][2] ?>" class="portfolio__link"><img class="portfolio__link-img" src="assets/img/icons/yt-alt.svg" alt="Acceder a <?= $trabajo['nombre'] ?>" title="Acceder a <?= $trabajo['nombre'] ?>" /></a>
+                <a target="_blank" href="<?= $trabajo['links'][2] ?>" class="portfolio__link"><img class="portfolio__link-img" src="assets/img/icons/yt-alt.svg" alt="Acceder a <?= $trabajo['nombre'] ?>" title="Acceder a <?= $trabajo['nombre'] ?>" /></a>
               <?php } ?>
             </div>
             <p class="portfolio__tags"><?php foreach ($trabajo['categorias'] as $categoria) {
@@ -172,17 +174,18 @@
 
       <article class="contact__info">
         <div class="contact__call">
-          <a href="#"><img class="contact__icon" src="assets/img/icons/envelope-icon.svg" alt="Teléfono Contacto"></a>
-          <a class="contact__link" href="#">jorgemartiinez19[arroba]gmail[punto]com</a>
+          <a href="" id="email-link"><img class="contact__icon" src="assets/img/icons/envelope-icon.svg" alt="Teléfono Contacto"></a>
+          <span class="contact__link" id="email-span" href="#"></span>
         </div>
         <div class="contact__email">
-          <a href="#"> <img class="contact__icon" src="assets/img/icons/phone-icon.svg" alt="Email Contacto"></a>
-          <a class="contact__link" href="#">605515467</a>
+          <a href="#" id="tel-link"> <img class="contact__icon" src="assets/img/icons/phone-icon.svg" alt="Email Contacto"></a>
+          <span class="contact__link" href="#" id="tel-span"></span>
         </div>
       </article>
 
     </div>
   </section>
+
   <noscript>Necesitas tener Javascript activado para visualizar esta web.</noscript>
   <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
