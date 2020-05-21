@@ -100,7 +100,7 @@ require('server/portfolio.php') ?>
           A continuación, voy a exponer algunos de los <strong>lenguajes</strong>, <strong>frameworks</strong> y/o <strong>herramientas</strong> que he estudiado y con los que he realizado algunos de mis proyectos.
         </p>
         <p class="paragraph">
-          Respecto a este tema de los <strong>frameworks</strong>, que están saliendo constantemente, soy partidario de tener una idea general sobre varios de ellos, sin profundizar demasiado en uno solo. Mi idea es buscar que me sea fácil el <strong>poder “saltar” de uno a otro</strong>. Opino que son herramientas y hay que tener varias en tu <strong>“toolbox”</strong> y saber elegir cuál es la mejor en cada caso. Busco <strong>ser versátil</strong> en este aspecto.
+          Respecto a este tema de los <strong>frameworks</strong>, que están saliendo constantemente, soy partidario de tener una idea general sobre varios de ellos, sin profundizar demasiado en uno solo. Mi idea es buscar que me sea fácil el <strong>poder “saltar” de uno a otro</strong>. Opino que son herramientas y hay que tener varias a tu disposición y saber elegir cuál es la mejor en cada caso. Busco <strong>ser versátil</strong> en este aspecto.
         </p>
       </div>
       <div class="skills__container">
