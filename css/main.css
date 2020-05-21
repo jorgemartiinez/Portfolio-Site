@@ -131,6 +131,28 @@ ORDER: Base + typography > general layout + grid > page layout > components
             transform: translateY(0);
     opacity: 1; } }
 
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  80% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  80% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
 *,
 *::before,
 *::after {
@@ -188,7 +210,7 @@ span::selection {
     color: #fff; }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
-      font-size: 8rem; } }
+      font-size: 6rem; } }
 
 .heading-secondary {
   font-weight: bold;
@@ -242,6 +264,9 @@ span::selection {
 
 .hide {
   display: none; }
+
+strong {
+  font-weight: 600; }
 
 .typewriter {
   width: 8em;
@@ -333,6 +358,9 @@ span::selection {
   .header__next-box {
     position: absolute;
     bottom: 10%; }
+    @media only screen and (max-width: 37.5em) {
+      .header__next-box {
+        bottom: 15%; } }
 
 .about {
   background-image: -webkit-gradient(linear, right top, left bottom, from(#9328f1), to(#7c21e5));
@@ -555,12 +583,13 @@ span::selection {
                 justify-content: flex-start; } }
     @media only screen and (max-width: 37.5em) {
       .skills__container {
-        padding: 7rem 3rem; } }
+        padding: 8rem 3rem; } }
   .skills__box {
     position: relative;
     -webkit-box-shadow: 1rem 2rem 1.5rem rgba(0, 0, 0, 0.64);
             box-shadow: 1rem 2rem 1.5rem rgba(0, 0, 0, 0.64);
     height: 35rem;
+    width: 33.333%;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 33.333%;
         -ms-flex: 0 0 33.333%;
@@ -590,6 +619,9 @@ span::selection {
             -ms-flex: 0 0 85%;
                 flex: 0 0 85%;
         margin-bottom: 8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .skills__box {
+        width: 85%; } }
   .skills__icon {
     position: absolute;
     top: 0%;
@@ -784,7 +816,7 @@ span::selection {
   text-align: right; }
 
 .contact__info {
-  padding-top: 3rem;
+  padding-top: 7rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -842,16 +874,10 @@ span::selection {
           align-items: center; }
 
 .contact__icon {
-  width: 10rem;
-  -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
-  -o-transition: transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease; }
+  width: 10rem; }
   .contact__icon:hover {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1); }
+    -webkit-animation: pulse 0.7s ease infinite;
+            animation: pulse 0.7s ease infinite; }
 
 .contact__link {
   margin-top: 2rem;

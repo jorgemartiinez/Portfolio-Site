@@ -65,12 +65,12 @@ span::selection {
   }
 
   @include respond(phone) {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 }
 
 .heading-secondary {
-  font-weight: bold;
+  font-weight: bold; 
   font-size: 4.2rem;
   color: #fff;
   position: relative;
@@ -133,6 +133,10 @@ span::selection {
 
 .hide {
   display: none;
+}
+
+strong {
+  font-weight: 600;
 }
 
 .typewriter {

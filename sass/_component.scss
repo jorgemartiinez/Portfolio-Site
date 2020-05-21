@@ -159,7 +159,7 @@
     }
 
     @include respond(phone) {
-      padding: 7rem 3rem;
+      padding: 8rem 3rem;
     }
   }
 
@@ -167,6 +167,7 @@
     position: relative;
     box-shadow: 1rem 2rem 1.5rem rgba(#000, 0.64);
     height: 35rem;
+    width: 33.333%;
     flex: 0 0 33.333%;
     background-color: #fff;
     border-radius: 5rem;
@@ -187,6 +188,10 @@
     @include respond(tab-port) {
       flex: 0 0 85%;
       margin-bottom: 8rem;
+    }
+
+    @include respond(phone) {
+      width: 85%;
     }
   }
 
@@ -226,8 +231,6 @@
 // * PORTFOLIO
 
 .portfolio {
-
-
   &__buttons {
   }
 
@@ -256,7 +259,7 @@
   &__card {
     flex: 0 0 calc(33.3333% - 2rem);
     // width: 80%;
-    box-shadow: .5rem 2rem 2.5rem rgba(#000, 0.4);
+    box-shadow: 0.5rem 2rem 2.5rem rgba(#000, 0.4);
 
     display: flex;
     flex-direction: column;
@@ -292,7 +295,6 @@
     @include respond(tab-port) {
       flex: 0 0 calc(50% - 2rem);
       height: 70rem;
-
     }
 
     @include respond(phone) {
@@ -304,7 +306,6 @@
     padding: 2rem 3rem 0rem 3rem;
     height: 30rem;
     max-height: 35rem;
-
   }
 
   .paragraph-small {
@@ -359,7 +360,7 @@
 
 .contact {
   &__info {
-    padding-top: 3rem;
+    padding-top: 7rem;
     display: flex;
     justify-content: space-around;
 
@@ -388,10 +389,9 @@
 
   &__icon {
     width: 10rem;
-    transition: transform 1s ease;
 
     &:hover {
-      transform: scale(1.1);
+      animation: pulse 0.7s ease infinite;
     }
   }
 

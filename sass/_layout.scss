@@ -32,8 +32,12 @@
   }
 
   &__next-box {
-   position: absolute;
-   bottom: 10%;
+    position: absolute;
+    bottom: 10%;
+
+    @include respond(phone) {
+      bottom: 15%;
+    }
   }
 }
 
@@ -68,7 +72,7 @@
 .content {
   max-width: 120rem;
 
-  @include respond(big-desktop){
+  @include respond(big-desktop) {
     max-width: 190rem;
   }
   padding: 2rem;

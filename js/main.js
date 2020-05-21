@@ -42,9 +42,9 @@ $(document).ready(function () {
   // * email para evitar bots
   var emailSpan = $('#email-span');
   var emailLink = $('#email-link');
-  var nombre = 'jorgemartiinez19';
+  var nombre = 'info';
   var arroba = '@';
-  var dominio = 'gmail.com';
+  var dominio = 'jorge-martinez.es';
   emailSpan.text(nombre + arroba + dominio);
   emailLink.attr('href', 'mailto:' + nombre + arroba + dominio);
   // * telefono para evitar bots
@@ -52,15 +52,13 @@ $(document).ready(function () {
   var telLink = $('#tel-link');
 
   telSpan.text('6' + '0' + '5' + '5' + '1' + '5' + '4' + '6' + '7');
-  telLink.attr('href', 'tel:'+ '6' + '0' + '5' + '5' + '1' + '5' + '4' + '6' + '7');
-
+  telLink.attr('href', 'tel:' + '6' + '0' + '5' + '5' + '1' + '5' + '4' + '6' + '7');
 });
 
 var tipoActivo = 'Todos';
 
 function filtrarPortfolio(btn, tipo) {
   if (tipo == tipoActivo) {
-    console.log('tiene el mismo tipo, no hagamos nada');
     return;
   }
 
@@ -89,9 +87,7 @@ function filtrarPortfolio(btn, tipo) {
     portfolios.each(function () {
       var portfolio = $(this);
       var tags = portfolio.find('.portfolio__tags').text().replace(/ /g, '').toLowerCase();
-      console.log(tags);
       if (tags.indexOf(tipo) > -1) {
-        console.log('esta es de ese tipo');
         portfolio.animate(
           {
             opacity: '1',
@@ -104,7 +100,6 @@ function filtrarPortfolio(btn, tipo) {
           }
         );
       } else {
-        console.log('no es de ese tipo');
         portfolio.animate(
           {
             opacity: '0',

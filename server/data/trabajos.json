@@ -4,27 +4,26 @@
     "texto": "Proyecto en el que he creado esta misma página web que me servirá de currículum y para mostrar los trabajos/proyectos que vaya realizando. ",
     "categorias": ["CSS", "SASS", "PHP", "Javascript"],
     "imagen": "bg-1.jpg",
-    "links": [
-      "https://github.com/jorgemartiinez/portfolio-site",
-      null,
-      null
-    ]
+    "links": ["https://github.com/jorgemartiinez/portfolio-site", null, null]
   },
   {
-    "nombre": "Proyecto Real Estate",
+    "nombre": "Web Real Estate",
     "texto": "Proyecto que realicé para un cliente que quería una web para su empresa. Utilicé Wordpress con el plugin Elementor, y añadí mi propio CSS y JS para varias modificaciones.",
     "categorias": ["Wordpress", "CSS", "Javascript"],
     "imagen": "realestate.jpg",
-    "links": [
-      null,
-      "https://realestate-leader.es/",
-      null
-    ]
+    "links": [null, "https://realestate-leader.es/", null]
+  },
+  {
+    "nombre": "ProjectsApp",
+    "texto": "Proyecto en el que intenté crear una app con dos secciones; una para gestionar tareas de mis proyectos (tipo todo-list) divididos en categorías, y otra para crear y editar notas.",
+    "categorias": ["Angular", "Ionic"],
+    "imagen": "ionic.png",
+    "links": ["https://github.com/jorgemartiinez/ProjectsApp-ionic", null, null]
   },
   {
     "nombre": "Proyecto Final Grado",
     "texto": "Durante las prácticas de DAW creé un panel de administración que sirve para realizar un control de horas de los clientes, con una nota de 9/10. Demo en Youtube.",
-    "categorias": ["PHP", "Javascript", "Bootstrap", "SQL"],
+    "categorias": ["PHP", "Javascript", "SQL"],
     "imagen": "php.jpg",
     "links": [
       "https://github.com/jorgemartiinez/Control-Horas",
@@ -38,12 +37,5 @@
     "categorias": ["Laravel", "Vue", "PHP", "Javascript"],
     "imagen": "integrador.jfif",
     "links": ["https://github.com/jorgemartiinez/Proyecto-Integrador-DAW", null, null]
-  },
-  {
-    "nombre": "ProjectsApp",
-    "texto": "Proyecto en el que intenté crear una app con dos secciones; una para gestionar tareas de mis proyectos (tipo todo-list) divididos en categorías, y otra para crear y editar notas.",
-    "categorias": ["Angular", "Ionic"],
-    "imagen": "ionic.png",
-    "links": ["https://github.com/jorgemartiinez/ProjectsApp-ionic", null, null]
   }
 ]
