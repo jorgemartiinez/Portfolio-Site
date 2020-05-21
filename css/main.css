@@ -345,16 +345,10 @@ strong {
   .header__social-link:not(:last-child) {
     margin-right: 3rem; }
   .header__social-img {
-    height: 5rem;
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    -o-transition: transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+    height: 5rem; }
     .header__social-img:hover {
-      -webkit-transform: scale(1.1);
-          -ms-transform: scale(1.1);
-              transform: scale(1.1); }
+      -webkit-animation: pulse 0.7s ease infinite;
+              animation: pulse 0.7s ease infinite; }
   .header__next-box {
     position: absolute;
     bottom: 10%; }

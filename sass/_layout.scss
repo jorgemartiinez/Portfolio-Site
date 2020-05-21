@@ -25,9 +25,8 @@
 
   &__social-img {
     height: 5rem;
-    transition: transform 0.3s ease;
     &:hover {
-      transform: scale(1.1);
+      animation: pulse 0.7s ease infinite;
     }
   }
 
