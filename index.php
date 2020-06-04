@@ -169,6 +169,7 @@ require('server/portfolio.php') ?>
       </div>
     </div>
     <div class="portfolio__cards u-margin-top-small">
+      <!-- Bucle trabajos -->
       <?php foreach ($trabajos as $trabajo) { ?>
         <article class="portfolio__card">
           <img class="portfolio__img lazy" alt="<?= $trabajo['nombre'] ?> imagen" data-src="assets/img/portfolio/<?= $trabajo['imagen'] ?>" />
@@ -180,12 +181,17 @@ require('server/portfolio.php') ?>
           </div>
           <div class="portfolio__more">
             <div class="portfolio__links">
+              <!-- Si tiene enlace a github -->
               <?php if ($trabajo['links'][0] !== null) { ?>
                 <a target="_blank" rel="noreferrer" href="<?= $trabajo['links'][0] ?>" class="portfolio__link"><img class="portfolio__link-img lazy" data-src="assets/img/icons/github-alt.svg" title="Acceder a GitHub <?= $trabajo['nombre'] ?>" alt="Acceder a github <?= $trabajo['nombre'] ?>" /></a>
               <?php } ?>
+
+              <!-- Si tiene enlace a web online -->
               <?php if ($trabajo['links'][1] !== null) { ?>
-                <a target="_blank"rel="noreferrer" href="<?= $trabajo['links'][1] ?>" class="portfolio__link"><img class="portfolio__link-img lazy" data-src="assets/img/icons/chrome.svg" alt="Acceder a <?= $trabajo['nombre'] ?>" title="Acceder a <?= $trabajo['nombre'] ?>" /></a>
+                <a target="_blank" rel="noreferrer" href="<?= $trabajo['links'][1] ?>" class="portfolio__link"><img class="portfolio__link-img lazy" data-src="assets/img/icons/chrome.svg" alt="Acceder a <?= $trabajo['nombre'] ?>" title="Acceder a <?= $trabajo['nombre'] ?>" /></a>
               <?php } ?>
+
+              <!-- Si tiene enlace a vídeo de yt -->
               <?php if ($trabajo['links'][2] !== null) { ?>
                 <a target="_blank" rel="noreferrer" href="<?= $trabajo['links'][2] ?>" class="portfolio__link"><img class="portfolio__link-img lazy" data-src="assets/img/icons/yt-alt.svg" alt="Acceder a <?= $trabajo['nombre'] ?>" title="Acceder a <?= $trabajo['nombre'] ?>" /></a>
               <?php } ?>
