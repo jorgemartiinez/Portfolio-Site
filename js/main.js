@@ -26,6 +26,9 @@ $(document).on('click', 'a[href^="#"]', function (e) {
 // * -----------------
 
 $(document).ready(function () {
+  // * LAZY LOAD PLUGIN
+  $('img.lazy').Lazy();
+
   var botones = $('button[data-button]');
 
   botones.each(function (boton) {
@@ -73,13 +76,13 @@ function filtrarPortfolio(btn, tipo) {
       portfolio.css('display', 'flex');
       portfolio.animate(
         {
-          opacity: '1',
+          opacity: '1'
         },
         {
           duration: 200,
           complete: function () {
             portfolio.css('display', 'flex');
-          },
+          }
         }
       );
     });
@@ -90,25 +93,25 @@ function filtrarPortfolio(btn, tipo) {
       if (tags.indexOf(tipo) > -1) {
         portfolio.animate(
           {
-            opacity: '1',
+            opacity: '1'
           },
           {
             duration: 200,
             complete: function () {
               portfolio.css('display', 'flex');
-            },
+            }
           }
         );
       } else {
         portfolio.animate(
           {
-            opacity: '0',
+            opacity: '0'
           },
           {
             duration: 400,
             complete: function () {
               portfolio.css('display', 'none');
-            },
+            }
           }
         );
       }
@@ -126,14 +129,14 @@ function openMenu() {
   nav.animate(
     {
       width: '100%',
-      opacity: '1',
+      opacity: '1'
     },
     {
       duration: 400,
       complete: function () {
         menuOpen = true;
         $('body').addClass('stop-scrolling');
-      },
+      }
     }
   );
 }
@@ -144,7 +147,7 @@ function closeMenu() {
   nav.animate(
     {
       width: '0',
-      opacity: '0',
+      opacity: '0'
     },
     {
       duration: 350,
@@ -152,7 +155,7 @@ function closeMenu() {
         menuOpen = false;
         nav.removeClass('show-flex');
         $('body').removeClass('stop-scrolling');
-      },
+      }
     }
   );
 }

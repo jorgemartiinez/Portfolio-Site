@@ -1,7 +1,14 @@
 [
+{
+    "nombre": "Quizzery",
+    "texto": "Proyecto para crear cuestionarios hecho con VueJS, creado para aprender a utilizar Vuex y demás, y ponerme al día con el framework depués de llevar un tiempo sin utilizarlo. Para el backend utilizo Firebase.",
+    "categorias": ["VUE", "SASS", "CSS"],
+    "imagen": "quizzery.svg",
+    "links": ["https://github.com/jorgemartiinez/Quizzery", null, "https://youtu.be/i5sOK_a3IAM"]
+  },
   {
     "nombre": "Web Limpiezas Y Decapados",
-    "texto": "Proyecto en el que creé una página web para un cliente que tiene una empresa que ofrece servicio de limpiezas.",
+    "texto": "Proyecto en el que creé una página web para un cliente que tiene una empresa de servicio de limpiezas y demás.",
     "categorias": ["CSS", "SASS", "PHP", "Javascript"],
     "imagen": "limpiezasydecapados.jpg",
     "links": ["https://github.com/jorgemartiinez/limpiezasyfachadas", "https://www.limpiezasydecapadosalcoy.es/", null]
