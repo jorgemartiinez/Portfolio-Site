@@ -62,7 +62,7 @@ require('server/portfolio.php') ?>
   <section class="header" id="header">
     <video class="video-bg" id="video" poster="assets/img/portfolio/bg-1.jpg" autoplay muted loop>
       <source src="assets/video/bgvideo-1.mp4" type="video/mp4" />
-      <img src="assets/img/portfolio/bg-1.jpg" alt="Your browser does not support the <video> tag" title="Your browser does not support the <video> tag" />
+      Your browser does not support the video tag.
     </video>
 
     <div class="header__box">
