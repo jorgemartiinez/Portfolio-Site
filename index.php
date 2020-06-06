@@ -37,7 +37,7 @@ require('server/portfolio.php') ?>
       <img src="assets/img/icons/burger-icon.svg" alt="Icono Menú" />
     </div>
 
-    <!-- Barra de navegación -->
+    <!-- Menú de navegación -->
     <nav class="nav">
       <h2 class="heading-secondary">Menú Principal</h2>
       <img class="nav__close" id="cross-icon" src="assets/img/icons/cross-icon.svg" alt="Icono cerrar menú" />
