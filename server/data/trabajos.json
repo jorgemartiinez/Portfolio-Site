@@ -1,4 +1,11 @@
 [
+  {
+    "nombre": "CineVue",
+    "texto": "Proyecto que sirve para ver información sobre películas, series y demás. He utilizado la API de TheMovieDB. Me ha servido para tratar algunos temas de Vue como el infinite scroll. Falta hacerla responsive.",
+    "categorias": ["VUE", "SASS", "CSS"],
+    "imagen": "cinevue.jpg",
+    "links": ["https://github.com/jorgemartiinez/cinevue", "https://cinevue.netlify.app/", "https://youtu.be/MzsoCL8t96Y"]
+  },
 {
     "nombre": "Quizzery",
     "texto": "Proyecto para crear cuestionarios hecho con VueJS, creado para aprender a utilizar Vuex y demás, y ponerme al día con el framework depués de llevar un tiempo sin utilizarlo. Para el backend utilizo Firebase.",
