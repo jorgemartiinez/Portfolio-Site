@@ -258,15 +258,13 @@
 
   &__card {
     flex: 0 0 calc(33.3333% - 2rem);
-    // width: 80%;
-    box-shadow: 0.5rem 2rem 2.5rem rgba(#000, 0.4);
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    // width: 80%;
     height: 60rem;
     max-height: 65rem;
+    box-shadow: 0.5rem 2rem 2.5rem rgba(#000, 0.4);
     background-color: rgb(255, 250, 250);
     border-radius: 0.5rem;
     margin-bottom: 2rem;
@@ -274,6 +272,7 @@
     margin-left: 1rem;
 
     transition: transform 0.2s ease;
+    cursor: pointer;
 
     &:hover {
       transform: translateY(-1rem) scale(1.012);
