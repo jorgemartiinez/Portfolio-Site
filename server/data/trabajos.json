@@ -1,28 +1,35 @@
 [
   {
+    "nombre": "Pets Shield",
+    "texto": "He creado una pequeña demo de una app que sirve para poner anuncios y buscar un nuevo dueño a tu mascota en caso de que no puedas hacerte cargo de ella. He probado TailwindCSS y me he puesto al día con Laravel 5.",
+    "categorias": ["Laravel", "TailwindCSS"],
+    "imagen": "pets-app.svg",
+    "links": ["https://github.com/jorgemartiinez/Pets-Demo", null, "https://youtu.be/A8O3dLH0evw"]
+  },
+  {
     "nombre": "CineVue",
-    "texto": "Proyecto que sirve para ver información sobre películas, series y demás. He utilizado la API de TheMovieDB. Me ha servido para tratar algunos temas de Vue como el infinite scroll. Falta hacerla responsive.",
-    "categorias": ["VUE", "SASS", "CSS"],
+    "texto": "Proyecto que sirve para ver información sobre películas, series y demás. He utilizado la API de TheMovieDB. Me ha servido para tratar algunos temas de Vue como el infinite scroll. Falta terminar el responsive.",
+    "categorias": ["Vue", "SASS", "CSS"],
     "imagen": "cinevue.jpg",
     "links": ["https://github.com/jorgemartiinez/cinevue", "https://cinevue.netlify.app/", "https://youtu.be/MzsoCL8t96Y"]
   },
 {
     "nombre": "Quizzery",
-    "texto": "Proyecto para crear cuestionarios hecho con VueJS, creado para aprender a utilizar Vuex y demás, y ponerme al día con el framework depués de llevar un tiempo sin utilizarlo. Para el backend utilizo Firebase.",
-    "categorias": ["VUE", "SASS", "CSS"],
+    "texto": "Proyecto para crear cuestionarios hecho con VueJS, desarrollado para aprender a utilizar Vuex y demás, y ponerme al día con el framework depués de llevar un tiempo sin utilizarlo. Para el backend utilizo Firebase.",
+    "categorias": ["Vue", "SASS", "CSS"],
     "imagen": "quizzery.svg",
     "links": ["https://github.com/jorgemartiinez/Quizzery", null, "https://youtu.be/i5sOK_a3IAM"]
   },
   {
     "nombre": "Web Limpiezas Y Decapados",
-    "texto": "Proyecto en el que creé una página web para un cliente que tiene una empresa de servicio de limpiezas y demás.",
+    "texto": "Proyecto en el que creé una página web para un cliente que tiene una empresa de servicio de limpiezas y demás. Se ha podido obtener una buena velocidad junto a un diseño moderno.",
     "categorias": ["CSS", "SASS", "PHP", "Javascript"],
     "imagen": "limpiezasydecapados.jpg",
     "links": ["https://github.com/jorgemartiinez/limpiezasyfachadas", "https://www.limpiezasydecapadosalcoy.es/", null]
   },
   {
     "nombre": "Página Portfolio",
-    "texto": "Proyecto en el que he creado esta misma página web que me servirá de currículum y para mostrar los trabajos/proyectos que vaya realizando. ",
+    "texto": "Proyecto en el que he creado esta misma página web que me servirá de currículum y para mostrar los trabajos/proyectos que vaya realizando.",
     "categorias": ["CSS", "SASS", "PHP", "Javascript"],
     "imagen": "bg-1.jpg",
     "links": ["https://github.com/jorgemartiinez/portfolio-site", null, null]
@@ -33,13 +40,6 @@
     "categorias": ["Wordpress", "CSS", "Javascript"],
     "imagen": "realestate.jpg",
     "links": [null, "https://realestate-leader.es/", null]
-  },
-  {
-    "nombre": "ProjectsApp",
-    "texto": "Proyecto en el que intenté crear una app con dos secciones; una para gestionar tareas de mis proyectos (tipo todo-list) divididos en categorías, y otra para crear y editar notas.",
-    "categorias": ["Angular", "Ionic"],
-    "imagen": "ionic.png",
-    "links": ["https://github.com/jorgemartiinez/ProjectsApp-ionic", null, null]
   },
   {
     "nombre": "Proyecto Final Grado",
@@ -55,7 +55,7 @@
   {
     "nombre": "Integrador DAW",
     "texto": "Proyecto integrador del ciclo de DAW. Se crea un sitio web para boy scauts y panel de administración para el mismo. Obtuvimos una nota de 9/10.",
-    "categorias": ["Laravel", "Vue", "PHP", "Javascript"],
+    "categorias": ["Laravel", "Vue"],
     "imagen": "integrador.jfif",
     "links": ["https://github.com/jorgemartiinez/Proyecto-Integrador-DAW", null, null]
   }

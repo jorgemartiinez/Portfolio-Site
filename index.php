@@ -1,11 +1,7 @@
-<?php ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-require('server/portfolio.php') ?>
+<?php require('server/portfolio.php') ?>
 
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -69,11 +65,14 @@ require('server/portfolio.php') ?>
       <h1 class="heading-primary heading-primary--text-white">Jorge Martínez</h1>
       <h2 class="heading-secondary typewriter anim-typewriter u-margin-top-small">Desarrollador web</h2>
       <div class="header__logos">
-        <a target="_blank" rel="noreferrer" class="header__social-link" href="https://github.com/jorgemartiinez">
-          <img class="header__social-img" src="assets/img/logos/social-links.png" alt="Github logo, ver mi perfil" title="Ver mi perfil en GitHub" />
-        </a>
         <a target="_blank" rel="noreferrer" class="header__social-link" href="https://linkedin.com/in/jorge-martínez-b8873b1a4">
           <img class="header__social-img" src="assets/img/logos/linkedin.svg" alt="Linkeding logo, ver mi perfil" title="Ver mi perfil en Linkedin" />
+        </a>
+        <a target="_blank" rel="noreferrer" class="header__social-link" href="https://github.com/jorgemartiinez">
+          <img class="header__social-img" src="assets/img/logos/git.svg" alt="Github logo, ver mi perfil" title="Ver mi perfil en GitHub" />
+        </a>
+        <a target="_blank" rel="noreferrer" class="header__social-link" href="https://www.infojobs.net/jorge-martinez-leo.prf">
+          <img class="header__social-img" src="assets/img/logos/infojobs.svg" alt="Infojobs, ver mi perfil" title="Ver mi perfil en Infojobs" />
         </a>
       </div>
       <div class="header__next-box">
@@ -99,6 +98,9 @@ require('server/portfolio.php') ?>
         <p class="paragraph">
           Actualmente, estoy aprovechando plataformas como <strong>Youtube</strong> o <strong>Udemy</strong>, para <strong>aprender</strong> distintos lenguajes de programación o frameworks de forma <strong>autodidacta</strong>, de cara a buscar un <strong>puesto de trabajo</strong>. También hago de vez en cuando diversos <strong>trabajos</strong> y/o proyectos para algunos <strong>clientes</strong>.
         </p>
+        <div class="u-text-center u-margin-top-medium">
+          <a target="_blank" rel="noreferrer" href="https://bit.ly/2C8WKiO" class="btn btn--cv">Ver mi CV</a>
+        </div>
       </div>
     </div>
     <div class="skills">
@@ -158,14 +160,13 @@ require('server/portfolio.php') ?>
       </p>
 
       <div class="u-text-center u-margin-top-medium">
-        <button class="btn btn--portfolio btn--active u-margin-bottom-small" data-button="Todos">Todos</button>
-        <button class="btn btn--portfolio u-margin-bottom-small" data-button="Javascript">Javascript</button>
-        <button class="btn btn--portfolio u-margin-bottom-small" data-button="PHP">PHP</button>
-        <button class="btn btn--portfolio u-margin-bottom-small" data-button="Laravel">Laravel</button>
-        <button class="btn btn--portfolio u-margin-bottom-small" data-button="CSS">CSS/SASS</button>
-        <button class="btn btn--portfolio u-margin-bottom-small" data-button="Wordpress">Wordpress</button>
-        <button class="btn btn--portfolio u-margin-bottom-small" data-button="Vue">Vue</button>
-        <button class="btn btn--portfolio u-margin-bottom-small" data-button="Angular">Angular</button>
+        <button class="btn btn--portfolio btn--active u-margin-bottom-small" data-button="Todos" title="Ver todos los proyectos">Todos</button>
+        <button class="btn btn--portfolio u-margin-bottom-small" data-button="Javascript" title="Ver proyectos con Javascript plano">Javascript</button>
+        <button class="btn btn--portfolio u-margin-bottom-small" data-button="PHP" title="Ver proyectos con PHP plano">PHP</button>
+        <button class="btn btn--portfolio u-margin-bottom-small" data-button="Laravel" title="Ver proyectos hechos con Laravel">Laravel</button>
+        <button class="btn btn--portfolio u-margin-bottom-small" data-button="CSS" title="Ver proyectos que contienen CSS o un preprocesador tipo SASS">CSS/SASS</button>
+        <button class="btn btn--portfolio u-margin-bottom-small" data-button="Wordpress" title="Ver proyectos que utilizan el CMS de Wordpress">Wordpress</button>
+        <button class="btn btn--portfolio u-margin-bottom-small" data-button="Vue" title="Ver proyectos que contienen el framework de VueJS">Vue</button>
       </div>
     </div>
     <div class="portfolio__cards u-margin-top-small">

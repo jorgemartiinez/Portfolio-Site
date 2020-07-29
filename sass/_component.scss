@@ -17,13 +17,14 @@
 // * BUTTON
 
 .btn {
+  font-size: 2.2rem;
+  padding: 1.2rem 3rem;
+  font-weight: 400;
   border-radius: 3rem;
   cursor: pointer;
+  text-decoration: none;
 
   &--portfolio {
-    font-size: 2.2rem;
-    padding: 1.2rem 3rem;
-    font-weight: 400;
     border: 1px solid $color-tertiary;
     background-color: #fff;
     color: $color-tertiary;
@@ -43,6 +44,20 @@
     &:active {
       transform: translateY(1rem);
     }
+  }
+
+  &--cv {
+    border: 1px solid $color-tertiary;
+    background-color: $color-tertiary;
+    color: #fff;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $color-tertiary;
+      background-color: #fff;
+      transform: translateY(-1rem);
+    }
+
   }
 
   &--active {
@@ -317,6 +332,7 @@
     min-height: 28rem;
     background-clip: content-box;
     object-fit: cover;
+    object-position: top center;
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
   }
