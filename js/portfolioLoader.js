@@ -13,8 +13,6 @@ const loadPortfolioData = async () => {
     })
     .then((jsondata) =>
       jsondata.forEach((item) => {
-        console.log(`item`, item);
-
         const containerItem = $('<article class="portfolio__card">');
         const body = loadBody(container, item);
         containerItem.append(body);
