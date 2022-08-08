@@ -1,10 +1,10 @@
 [
   {
     "nombre": "Avanza",
-    "texto": "Aplicación en la que llevo trabajando a nivel profesional 2 años. La usa la empresa a nivel interno para la gestión de prenvención de riesgos laborales y demás.",
+    "texto": "Aplicación en la que llevo trabajando a nivel profesional 2 años. La usa la empresa a nivel interno para la gestión de prenvención de riesgos laborales y demás. Por contrato no puedo enseñar mucho :(",
     "categorias": ["Laravel", "CSS", "Javascript", "Vue", "SQL"],
     "imagen": "avanza.svg",
-    "links": [null, null, "https://youtu.be/A8O3dLH0evw"]
+    "links": [null, null, null]
   },
   {
     "nombre": "Pets Shield",
