@@ -45,9 +45,9 @@ $(document).ready(function () {
   // * email para evitar bots
   var emailSpan = $('#email-span');
   var emailLink = $('#email-link');
-  var nombre = 'info';
+  var nombre = 'jorgemartiinez19';
   var arroba = '@';
-  var dominio = 'jorge-martinez.es';
+  var dominio = 'gmail.com';
   emailSpan.text(nombre + arroba + dominio);
   emailLink.attr('href', 'mailto:' + nombre + arroba + dominio);
   // * telefono para evitar bots

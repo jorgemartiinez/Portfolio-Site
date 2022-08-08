@@ -1,5 +1,12 @@
 [
   {
+    "nombre": "Avanza",
+    "texto": "Aplicación en la que llevo trabajando a nivel profesional 2 años. La usa la empresa a nivel interno para la gestión de prenvención de riesgos laborales y demás.",
+    "categorias": ["Laravel", "CSS", "Javascript", "Vue", "SQL"],
+    "imagen": "avanza.svg",
+    "links": [null, null, "https://youtu.be/A8O3dLH0evw"]
+  },
+  {
     "nombre": "Pets Shield",
     "texto": "He creado una pequeña demo de una app que sirve para poner anuncios y buscar un nuevo dueño a tu mascota en caso de que no puedas hacerte cargo de ella. He probado TailwindCSS y me he puesto al día con Laravel 5.",
     "categorias": ["Laravel", "TailwindCSS"],
@@ -25,7 +32,14 @@
     "texto": "Proyecto en el que creé una página web para un cliente que tiene una empresa de servicio de limpiezas y demás. Se ha podido obtener una buena velocidad junto a un diseño moderno.",
     "categorias": ["CSS", "SASS", "PHP", "Javascript"],
     "imagen": "limpiezasydecapados.jpg",
-    "links": ["https://github.com/jorgemartiinez/limpiezasyfachadas", "https://www.limpiezasydecapadosalcoy.es/", null]
+    "links": ["https://github.com/jorgemartiinez/limpiezasyfachadas", null, null]
+  },
+  {
+    "nombre": "Web Copistería",
+    "texto": "Proyecto en el que creé una página web para un cliente que tiene una copistería. Creé primero la página estática y luego la convertí a Wordpress.",
+    "categorias": ["CSS", "PHP", "Javascript", "Wordpress"],
+    "imagen": "copisteria.png",
+    "links": ["https://github.com/jorgemartiinez/copisteriasanjorge", null, null]
   },
   {
     "nombre": "Página Portfolio",
