@@ -5,3 +5,5 @@ En este proyecto he creado una página web que me servirá para complementar mi 
 TODO: 
 - [X] Hacer web estática, no depender de PHP.
 - [ ] Pasar web a Vue/React
+- [ ] Modo oscuro?
+- [ ] Cambiar a versión en inglés
