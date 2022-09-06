@@ -1,5 +1,12 @@
 [
   {
+    "nombre": "Memeteca",
+    "texto": "Aplicación para subir imágenes y compartilas con mi grupo de amigos. Utiliza firebase y he podido experimentar con su login/storage/db/hosting",
+    "categorias": ["CSS", "Javascript", "Vue", "Firebase"],
+    "imagen": "meme-no-se.jpg",
+    "links": [null, null, null]
+  },
+  {
     "nombre": "Avanza",
     "texto": "Aplicación en la que llevo trabajando a nivel profesional 2 años. La usa la empresa a nivel interno para la gestión de prenvención de riesgos laborales y demás. Por contrato no puedo enseñar mucho :(",
     "categorias": ["Laravel", "CSS", "Javascript", "Vue", "SQL"],
