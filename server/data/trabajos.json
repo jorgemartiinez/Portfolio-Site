@@ -4,7 +4,7 @@
     "texto": "Aplicación para subir imágenes y compartirlas con mi grupo de amigos. Utiliza firebase y he podido experimentar con su login/storage/db/hosting",
     "categorias": ["CSS", "Javascript", "Vue", "Firebase"],
     "imagen": "meme-no-se.jpg",
-    "links": ["https://github.com/jorgemartiinez/AvanzaMemeteca", null, null]
+    "links": ["https://github.com/jorgemartiinez/AvanzaMemeteca", "https://avanza-memeteca-63aa4.web.app", null]
   },
   {
     "nombre": "Avanza",
@@ -18,7 +18,7 @@
     "texto": "He creado una pequeña demo de una app que sirve para poner anuncios y buscar un nuevo dueño a tu mascota en caso de que no puedas hacerte cargo de ella. He probado TailwindCSS y me he puesto al día con Laravel 5.",
     "categorias": ["Laravel", "TailwindCSS"],
     "imagen": "pets-app.svg",
-    "links": ["https://github.com/jorgemartiinez/Pets-Demo", "https://avanza-memeteca-63aa4.web.app", "https://youtu.be/A8O3dLH0evw"]
+    "links": ["https://github.com/jorgemartiinez/Pets-Demo", null, "https://youtu.be/A8O3dLH0evw"]
   },
   {
     "nombre": "CineVue",
