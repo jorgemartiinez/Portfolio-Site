@@ -2,7 +2,7 @@
   {
     "nombre": "Memeteca",
     "texto": "Aplicación para subir imágenes y compartirlas con mi grupo de amigos. Utiliza firebase y he podido experimentar con su login/storage/db/hosting",
-    "categorias": ["CSS", "Javascript", "Vue", "Firebase"],
+    "categorias": ["Javascript", "Vue", "Firebase"],
     "imagen": "meme-no-se.jpg",
     "links": ["https://github.com/jorgemartiinez/AvanzaMemeteca", "https://avanza-memeteca-63aa4.web.app", null]
   },
